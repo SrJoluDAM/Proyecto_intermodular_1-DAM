@@ -1,11 +1,10 @@
-Gestor de Biblioteca – Modelo Entidad-Relación
+# Gestor de Biblioteca – Modelo Entidad-Relación
 
- Descripción
+# Descripción
 
 Este trabajo consiste en el diseño de un modelo entidad-relación (ER) para una base de datos de una biblioteca. La idea es representar cómo se organizan los libros, los usuarios, los préstamos y las reservas dentro del sistema.
 
-
- Entidades
+# Entidades
 
 LIBRO
 
@@ -19,7 +18,7 @@ Atributos:
  año_publicación
  editorial
 
- AUTOR
+# AUTOR
 
 Representa a los autores de los libros.
 
@@ -29,7 +28,7 @@ Atributos:
  nombre
  nacionalidad
 
- EJEMPLAR
+# EJEMPLAR
 
 Son las copias físicas de un libro.
 
@@ -40,7 +39,7 @@ Atributos:
  ubicación
  id_libro (FK)
 
- USUARIO
+# USUARIO
 
 Personas que usan la biblioteca.
 
@@ -52,7 +51,7 @@ Atributos:
  email
  teléfono
 
- PRÉSTAMO
+# PRÉSTAMO
 
 Registra cuando un usuario se lleva un ejemplar.
 
@@ -65,7 +64,7 @@ Atributos:
  id_usuario (FK)
  id_ejemplar (FK)
 
- RESERVA
+# RESERVA
 
 Sirve para cuando un usuario quiere reservar un libro.
 
@@ -79,9 +78,9 @@ Atributos:
  id_libro (FK)
 
 
- Relaciones
+# Relaciones
 
- AUTOR – LIBRO
+# AUTOR – LIBRO
 
  Tipo: N:M
   Un autor puede escribir varios libros y un libro puede tener varios autores.
@@ -91,41 +90,41 @@ Por eso se crea una tabla intermedia:
  LIBRO_AUTOR (id_libro, id_autor)
 
 
- LIBRO – EJEMPLAR
+# LIBRO – EJEMPLAR
 
  Tipo: 1:N
   Un libro puede tener muchos ejemplares, pero cada ejemplar pertenece a un solo libro.
 
 
- USUARIO – PRÉSTAMO
+# USUARIO – PRÉSTAMO
 
  Tipo: 1:N
   Un usuario puede hacer varios préstamos.
 
 
 
- EJEMPLAR – PRÉSTAMO
+# EJEMPLAR – PRÉSTAMO
 
  Tipo: 1:N
   Un ejemplar se puede prestar varias veces a lo largo del tiempo.
 
 
 
- USUARIO – RESERVA
+# USUARIO – RESERVA
 
  Tipo: 1:N
   Un usuario puede hacer varias reservas.
 
 
 
- LIBRO – RESERVA
+# LIBRO – RESERVA
 
  Tipo: 1:N
   Un libro puede tener varias reservas.
 
 
 
-  Decisiones tomadas
+ # Decisiones tomadas
 
  He usado una relación N:M entre autor y libro porque es más realista.
  La entidad "reserva" no es una relación simple porque tiene atributos propios.
