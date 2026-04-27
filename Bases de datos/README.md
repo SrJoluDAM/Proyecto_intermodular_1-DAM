@@ -1,22 +1,19 @@
-# Gestor de Biblioteca
+# Gestor de Biblioteca - Base de Datos
 
-Este programa es un gestor de biblioteca hecho con base de datos en MySQL. 
-Permite gestionar libros, autores, socios y préstamos.
-
----
-
-## ¿Que hace el programa?
-
-- Guardar libros y sus autores
-- Registrar socios de la biblioteca
-- Gestionar préstamos y devoluciones de libros
-- Controlar los ejemplares disponibles
+Este proyecto es la base de datos de un gestor de biblioteca hecha en MySQL.
+Por ahora no está conectada a ningún programa, es solo la estructura y los datos.
 
 ---
 
-## Base de datos
+## ¿Que contiene?
 
-La base de datos se llama `gestor_biblioteca` y tiene las siguientes tablas:
+- Tablas para gestionar libros, autores, socios y préstamos
+- Relaciones entre las tablas con claves foráneas
+- Algunos datos de prueba ya insertados
+
+---
+
+## Tablas
 
 - **autores** - Guarda el nombre y la nacionalidad de los autores
 - **libros** - Guarda los libros con su título, editorial, año y autor
@@ -51,6 +48,3 @@ La base de datos ya viene con algunos datos de ejemplo:
 - 3 autores (Stephen King, J.K. Rowling, George Orwell)
 - 15 libros repartidos entre los autores
 - 5 socios de prueba
-
----
-
