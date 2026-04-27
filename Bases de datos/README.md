@@ -4,10 +4,9 @@
 
 Este trabajo consiste en el diseño de un modelo entidad-relación (ER) para una base de datos de una biblioteca. La idea es representar cómo se organizan los libros, los usuarios, los préstamos y las reservas dentro del sistema.
 
-
 # Entidades
 
-# LIBRO
+LIBRO
 
 Representa los libros de la biblioteca.
 
@@ -65,7 +64,7 @@ Atributos:
  id_usuario (FK)
  id_ejemplar (FK)
 
-#  RESERVA
+# RESERVA
 
 Sirve para cuando un usuario quiere reservar un libro.
 
@@ -125,7 +124,7 @@ Por eso se crea una tabla intermedia:
 
 
 
-#  Decisiones tomadas
+ # Decisiones tomadas
 
  He usado una relación N:M entre autor y libro porque es más realista.
  La entidad "reserva" no es una relación simple porque tiene atributos propios.
@@ -133,12 +132,12 @@ Por eso se crea una tabla intermedia:
 
 
 
-# Conclusión
+ Conclusión
 
 Este modelo representa de forma básica cómo funcionaría una biblioteca. Creo que cumple con lo que se pide y está normalizado a un nivel inicial.
 
 
-# Mejoras posibles
+ Mejoras posibles
 
  Añadir categorías de libros
  Control de multas
