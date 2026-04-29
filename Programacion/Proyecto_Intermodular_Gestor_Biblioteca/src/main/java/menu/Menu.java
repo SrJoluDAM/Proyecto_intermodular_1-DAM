@@ -4,6 +4,7 @@ import service.ReservaService;
 import DAO.LibrosDAO;
 import DAO.SociosDAO;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Menu {
@@ -27,6 +28,7 @@ public class Menu {
             System.out.println("5. Ver socios");
             System.out.println("6. Añadir socio");
             System.out.println("7. Eliminar socio");
+            System.out.println("8. Exportar XML");
             System.out.println("0. Salir");
 
             System.out.print("Opción: ");
@@ -86,6 +88,11 @@ public class Menu {
 
                     sociosDAO.eliminar(id);
                 }
+
+                case 8 ->
+                    new service.BibliotecaXMLExporter()
+                            .exportar("biblioteca.xml");
+
 
                 case 0 -> System.out.println("Saliendo...");
 

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Gestor_biblioteca>
+    <libros>
+        <libro id="1">
+            <titulo>IT</titulo>
+            <anioPublicacion>1986</anioPublicacion>
+            <editorial>Viking Press</editorial>
+            <autor>Stephen King</autor>
+            <estado>DISPONIBLE</estado>
+        </libro>
+        <libro id="2">
+            <titulo>El resplandor</titulo>
+            <anioPublicacion>1977</anioPublicacion>
+            <editorial>Doubleday</editorial>
+            <autor>Stephen King</autor>
+            <estado>DISPONIBLE</estado>
+        </libro>
+        <libro id="3">
+            <titulo>Misery</titulo>
+            <anioPublicacion>1987</anioPublicacion>
+            <editorial>Viking Press</editorial>
+            <autor>Stephen King</autor>
+            <estado>DISPONIBLE</estado>
+        </libro>
+        <libro id="4">
+            <titulo>Carrie</titulo>
+            <anioPublicacion>1974</anioPublicacion>
+            <editorial>Doubleday</editorial>
+            <autor>Stephen King</autor>
+            <estado>DISPONIBLE</estado>
+        </libro>
+        <libro id="5">
+            <titulo>Cementerio de animales</titulo>
+            <anioPublicacion>1983</anioPublicacion>
+            <editorial>Doubleday</editorial>
+            <autor>Stephen King</autor>
+            <estado>DISPONIBLE</estado>
+        </libro>
+        <libro id="6">
+            <titulo>Harry Potter y la piedra filosofal</titulo>
+            <anioPublicacion>1997</anioPublicacion>
+            <editorial>Bloomsbury</editorial>
+            <autor>J.K. Rowling</autor>
+            <estado>DISPONIBLE</estado>
+        </libro>
+        <libro id="7">
+            <titulo>Harry Potter y la cámara secreta</titulo>
+            <anioPublicacion>1998</anioPublicacion>
+            <editorial>Bloomsbury</editorial>
+            <autor>J.K. Rowling</autor>
+            <estado>DISPONIBLE</estado>
+        </libro>
+        <libro id="8">
+            <titulo>Harry Potter y el prisionero de Azkaban</titulo>
+            <anioPublicacion>1999</anioPublicacion>
+            <editorial>Bloomsbury</editorial>
+            <autor>J.K. Rowling</autor>
+            <estado>DISPONIBLE</estado>
+        </libro>
+        <libro id="9">
+            <titulo>Harry Potter y el cáliz de fuego</titulo>
+            <anioPublicacion>2000</anioPublicacion>
+            <editorial>Bloomsbury</editorial>
+            <autor>J.K. Rowling</autor>
+            <estado>DISPONIBLE</estado>
+        </libro>
+        <libro id="10">
+            <titulo>Harry Potter y la Orden del Fénix</titulo>
+            <anioPublicacion>2003</anioPublicacion>
+            <editorial>Bloomsbury</editorial>
+            <autor>J.K. Rowling</autor>
+            <estado>DISPONIBLE</estado>
+        </libro>
+        <libro id="11">
+            <titulo>1984</titulo>
+            <anioPublicacion>1949</anioPublicacion>
+            <editorial>Secker &amp; Warburg</editorial>
+            <autor>George Orwell</autor>
+            <estado>DISPONIBLE</estado>
+        </libro>
+        <libro id="12">
+            <titulo>Rebelión en la granja</titulo>
+            <anioPublicacion>1945</anioPublicacion>
+            <editorial>Secker &amp; Warburg</editorial>
+            <autor>George Orwell</autor>
+            <estado>DISPONIBLE</estado>
+        </libro>
+        <libro id="13">
+            <titulo>Homenaje a Cataluña</titulo>
+            <anioPublicacion>1938</anioPublicacion>
+            <editorial>Secker &amp; Warburg</editorial>
+            <autor>George Orwell</autor>
+            <estado>DISPONIBLE</estado>
+        </libro>
+        <libro id="14">
+            <titulo>Subir a por aire</titulo>
+            <anioPublicacion>1939</anioPublicacion>
+            <editorial>Victor Gollancz Ltd</editorial>
+            <autor>George Orwell</autor>
+            <estado>DISPONIBLE</estado>
+        </libro>
+        <libro id="15">
+            <titulo>Sin blanca en París y Londres</titulo>
+            <anioPublicacion>1933</anioPublicacion>
+            <editorial>Victor Gollancz Ltd</editorial>
+            <autor>George Orwell</autor>
+            <estado>DISPONIBLE</estado>
+        </libro>
+    </libros>
+    <socios>
+        <socio id="1">
+            <nombre>Jose</nombre>
+            <apellido>Montero</apellido>
+            <email>socio1@socio.com</email>
+        </socio>
+        <socio id="3">
+            <nombre>Pepe</nombre>
+            <apellido>Ruiz</apellido>
+            <email>socio3@socio.com</email>
+        </socio>
+        <socio id="4">
+            <nombre>Ana</nombre>
+            <apellido>Rodriguez</apellido>
+            <email>socio4@socio.com</email>
+        </socio>
+        <socio id="5">
+            <nombre>Luis</nombre>
+            <apellido>Guitierrez</apellido>
+            <email>socio5@socio.com</email>
+        </socio>
+    </socios>
+    <prestamos/>
+    <reservas/>
+</Gestor_biblioteca>
