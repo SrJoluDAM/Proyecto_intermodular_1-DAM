@@ -25,3 +25,55 @@ MySQL (Para la creación de base de datos)
 Git+Github (Para el control de versiones)
 
 Aplicacion Draw.io para diagrama entidad-relación.
+
+⚙️ Instalación y ejecución
+
+ 1. Instalar Java
+Descargar e instalar Java JDK (versión 17 o superior).
+
+Comprobar instalación con:
+
+java -version
+
+ 2. Instalar y configurar XAMPP
+    
+Descargar e instalar XAMPP.
+Abrir el panel de control.
+Iniciar el servicio MySQL.
+
+ 3. Crear la base de datos
+
+Abrir el navegador y entrar en:
+
+http://localhost/phpmyadmin
+
+Crear una base de datos llamada:
+
+CREATE DATABASE biblioteca;
+
+Importar las tablas del proyecto(en la carpeta Base de datos--> Scripts SQL)
+
+🔹 4. Configurar el proyecto
+
+Abrir el proyecto en IntelliJ IDEA.
+
+Configurar la conexión JDBC en el código:
+
+String url = "jdbc:mysql://localhost:3306/biblioteca";
+String user = "root";
+String password = "";
+
+▶️ 5. Ejecutar la aplicación
+
+Ejecutar la clase principal (Main).
+
+Comprobar que:
+
+La aplicación arranca
+Se conecta a la base de datos
+Permite ver y reservar libros
+
+⚠️ Problemas comunes
+MySQL no iniciado → Iniciar desde XAMPP
+Error de conexión → Revisar usuario/contraseña
+Base de datos no existe → Crear biblioteca
