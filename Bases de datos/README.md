@@ -1,145 +1,50 @@
-# Gestor de Biblioteca – Modelo Entidad-Relación
+# Gestor de Biblioteca - Base de Datos
 
-# Descripción
+Este proyecto es la base de datos de un gestor de biblioteca hecha en MySQL.
+Por ahora no está conectada a ningún programa, es solo la estructura y los datos.
 
-Este trabajo consiste en el diseño de un modelo entidad-relación (ER) para una base de datos de una biblioteca. La idea es representar cómo se organizan los libros, los usuarios, los préstamos y las reservas dentro del sistema.
+---
 
-# Entidades
+## ¿Que contiene?
 
-LIBRO
+- Tablas para gestionar libros, autores, socios y préstamos
+- Relaciones entre las tablas con claves foráneas
+- Algunos datos de prueba ya insertados
 
-Representa los libros de la biblioteca.
+---
 
-Atributos:
+## Tablas
 
- id_libro (PK)
- título
- ISBN
- año_publicación
- editorial
+- **autores** - Guarda el nombre y la nacionalidad de los autores
+- **libros** - Guarda los libros con su título, editorial, año y autor
+- **ejemplar** - Cada copia física de un libro que hay en la biblioteca
+- **socios** - Los usuarios registrados en la biblioteca
+- **prestamo** - Registra cuando un socio saca un libro y cuando lo devuelve
+- **escriben** - Relaciona los autores con sus libros
 
-# AUTOR
+---
 
-Representa a los autores de los libros.
+## Requisitos
 
-Atributos:
+- XAMPP (MySQL + phpMyAdmin)
+- MySQL 5.7 o superior
 
- id_autor (PK)
- nombre
- nacionalidad
+---
 
-# EJEMPLAR
+## Como importar la base de datos
 
-Son las copias físicas de un libro.
+1. Abre XAMPP y arranca Apache y MySQL
+2. Entra en phpMyAdmin (http://localhost/phpmyadmin)
+3. Crea una base de datos llamada `gestor_biblioteca`
+4. Ve a la pestaña **Importar** y selecciona el archivo `.sql`
+5. Dale a continuar y listo
 
-Atributos:
+---
 
- id_ejemplar (PK)
- estado
- ubicación
- id_libro (FK)
+## Datos de prueba
 
-# USUARIO
+La base de datos ya viene con algunos datos de ejemplo:
 
-Personas que usan la biblioteca.
-
-Atributos:
-
- id_usuario (PK)
- nombre
- apellidos
- email
- teléfono
-
-# PRÉSTAMO
-
-Registra cuando un usuario se lleva un ejemplar.
-
-Atributos:
-
- id_prestamo (PK)
- fecha_inicio
- fecha_fin
- fecha_devolución
- id_usuario (FK)
- id_ejemplar (FK)
-
-# RESERVA
-
-Sirve para cuando un usuario quiere reservar un libro.
-
-Atributos:
-
- id_reserva (PK)
- fecha_reserva
- estado
- fecha_expiración
- id_usuario (FK)
- id_libro (FK)
-
-
-# Relaciones
-
-# AUTOR – LIBRO
-
- Tipo: N:M
-  Un autor puede escribir varios libros y un libro puede tener varios autores.
-
-Por eso se crea una tabla intermedia:
-
- LIBRO_AUTOR (id_libro, id_autor)
-
-
-# LIBRO – EJEMPLAR
-
- Tipo: 1:N
-  Un libro puede tener muchos ejemplares, pero cada ejemplar pertenece a un solo libro.
-
-
-# USUARIO – PRÉSTAMO
-
- Tipo: 1:N
-  Un usuario puede hacer varios préstamos.
-
-
-
-# EJEMPLAR – PRÉSTAMO
-
- Tipo: 1:N
-  Un ejemplar se puede prestar varias veces a lo largo del tiempo.
-
-
-
-# USUARIO – RESERVA
-
- Tipo: 1:N
-  Un usuario puede hacer varias reservas.
-
-
-
-# LIBRO – RESERVA
-
- Tipo: 1:N
-  Un libro puede tener varias reservas.
-
-
-
- # Decisiones tomadas
-
- He usado una relación N:M entre autor y libro porque es más realista.
- La entidad "reserva" no es una relación simple porque tiene atributos propios.
- Se diferencia entre libro y ejemplar porque no es lo mismo el libro en sí que sus copias físicas.
-
-
-
- Conclusión
-
-Este modelo representa de forma básica cómo funcionaría una biblioteca. Creo que cumple con lo que se pide y está normalizado a un nivel inicial.
-
-
- Mejoras posibles
-
- Añadir categorías de libros
- Control de multas
- Gestión de empleados
-
+- 3 autores (Stephen King, J.K. Rowling, George Orwell)
+- 15 libros repartidos entre los autores
+- 5 socios de prueba
