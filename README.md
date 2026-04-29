@@ -14,7 +14,7 @@ Permite:
 
 🛠️ Tecnologias usadas.
 
-Java 24
+Java 17+
 
 IntelliJ IDEA (para la creación de la aplicación)
 
